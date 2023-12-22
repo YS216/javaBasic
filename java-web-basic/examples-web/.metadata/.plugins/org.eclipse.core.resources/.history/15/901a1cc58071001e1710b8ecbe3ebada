@@ -1,0 +1,21 @@
+package Array01;
+
+public class Array_int01 {
+	
+	public static void main(String[] args) {
+		// 배열 : 같은 자료형을 연속된 저장공간에 저장함
+		//		 배열의 길이는 늘리거나 줄일 수 없다
+		//		 int[] 변수명 = new int[갯수]
+		//		 int 변수명[] = new int[갯수]
+		
+		// 저장공간을 확보만 하고 값은 나중애 넣을 깨
+		int arrayInt[] = new int[10];
+		int[] arrayin2 = new int[5];
+		
+		// 배열을 만들면서 값을 바로 넣을 때
+		int arrayInt3[] = {1, 2, 3, 4, 5};
+		
+		
+	}
+
+}

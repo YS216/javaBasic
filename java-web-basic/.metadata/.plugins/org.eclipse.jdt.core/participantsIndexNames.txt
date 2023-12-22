@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\user\Documents\YS\workspace\java-web-basic\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\746234282.index
+\demoweb\src\main\java
+C:\Users\user\Documents\YS\workspace\java-web-basic\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2758798845.index
+\examples-web\src\main\java

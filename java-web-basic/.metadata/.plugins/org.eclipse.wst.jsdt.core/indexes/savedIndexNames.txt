@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+C:\Users\Infotrol-User\Documents\YS\workspace\java-web-basic\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+694084900.index
+2586984271.index
+2896543421.index
+2168492253.index

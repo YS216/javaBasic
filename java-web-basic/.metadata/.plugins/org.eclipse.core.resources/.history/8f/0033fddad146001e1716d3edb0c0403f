@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Java Bean And Property</title>
+</head>
+<body>
+
+	<% Person person = new Person(); %>
+
+</body>
+</html>

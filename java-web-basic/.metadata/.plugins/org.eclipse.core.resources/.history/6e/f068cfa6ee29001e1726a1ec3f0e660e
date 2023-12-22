@@ -1,0 +1,5 @@
+package com.exampleweb.servlet;
+
+public class HomeServlet {
+
+}

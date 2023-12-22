@@ -1,0 +1,14 @@
+INDEX VERSION 1.134+C:\Users\Infotrol-User\Documents\YS\workspace\java-web-basic\examples-web\.metadata\.plugins\org.eclipse.jdt.core
+3667248323.index
+4046047039.index
+1592990745.index
+3976781352.index
+1865797976.index
+2472775329.index
+1730603349.index
+2357333702.index
+3492354828.index
+2832323245.index
+814882326.index
+1031298255.index
+3618006364.index
