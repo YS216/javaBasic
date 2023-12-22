@@ -1,0 +1,12 @@
+
+public class BizCardApp {
+
+	
+	public static void main(String[] args) {
+		
+		// 1. 작업 메뉴 표시 + 선택 함수 만들기
+		// 2. 선택 작업에 따라 실행하는 구조 만들기, 관련 변수 만들기
+		// 3. 등록 기능 표현
+		
+	}
+}

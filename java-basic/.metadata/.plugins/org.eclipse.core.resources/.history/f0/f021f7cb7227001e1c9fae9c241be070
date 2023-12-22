@@ -1,0 +1,42 @@
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BizCardApp {
+
+	private Scanner scanner = new Scanner(System.in);
+	private int nextPostion = 1;
+	private ArrayList<BizCard> bizCards;
+	
+	public BizCardApp() {
+		
+		FileInputStream fis = null;
+		ObjectInputStream ois = null;
+		
+//		try {
+//			fis = new FileInputStream("bizs.no");
+//			ois = new ObjectInputStream(fis);
+//			if (bizs.size() > 0) {
+//				BizCard lastBizCard = bizs.get()
+//			}
+		}
+	
+	public String selectTask() {
+		System.out.println("**********************************");
+		System.out.println("* 1. 명함 등록");
+		System.out.println("* 2. ");
+	}
+	
+
+
+
+	public static void main(String[] args) {
+		
+		// 1. 작업 메뉴 표시 + 선택 함수 만들기
+		
+		// 2. 선택 작업에 따라 실행하는 구조 만들기, 관련 변수 만들기
+		// 3. 등록 기능 표현
+		
+	}
+}

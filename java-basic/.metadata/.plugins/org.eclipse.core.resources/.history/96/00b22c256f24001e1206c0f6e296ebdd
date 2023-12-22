@@ -1,0 +1,14 @@
+
+public class ToDo {
+
+	int no;
+	String title;
+	String content;
+	java.util.Date regDate;
+
+	
+	String info() {
+		String info = String.format("[%3d][%s][%s][%s]", no, title, content, regDate);
+		return info;
+	}
+}

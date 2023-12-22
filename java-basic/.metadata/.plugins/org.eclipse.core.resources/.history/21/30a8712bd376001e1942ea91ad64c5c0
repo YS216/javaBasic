@@ -1,0 +1,19 @@
+package polymorphism07;
+
+public class Car {
+	
+	boolean power;
+	String model;
+	String color;
+	final int MAX_SPEED = 300;
+	int speed;
+	
+	Car() {
+		this("EIE2023", "white");
+	}
+	Car(String model, String color) {
+		this.model = model;
+		this.color = color;
+	}
+
+}

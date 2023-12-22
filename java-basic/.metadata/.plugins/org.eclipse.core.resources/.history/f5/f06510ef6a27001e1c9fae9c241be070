@@ -1,0 +1,10 @@
+
+public class BizCardApp {
+
+	
+	public static void main(String[] args) {
+		
+		BizCard a = new BizCard();
+		
+	}
+}

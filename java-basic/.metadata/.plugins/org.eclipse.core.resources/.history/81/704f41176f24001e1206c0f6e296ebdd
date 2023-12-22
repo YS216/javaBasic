@@ -1,0 +1,9 @@
+
+public class ToDo {
+
+	int no;
+	String title;
+	String content;
+	java.util.Date regDate;
+
+}

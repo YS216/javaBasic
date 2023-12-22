@@ -1,0 +1,12 @@
+package polymorphism07;
+
+public class Car {
+	
+	boolean power;
+	String modle;
+	String color;
+	final int MAX_SPEED = 300;
+	int speed;
+	
+
+}

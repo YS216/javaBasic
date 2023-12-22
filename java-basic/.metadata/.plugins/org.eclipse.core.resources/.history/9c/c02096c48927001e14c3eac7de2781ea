@@ -1,0 +1,111 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BizCardApp {
+
+	private Scanner scanner = new Scanner(System.in);
+	private int nextBizCardNo = 1;       // 명함 번호에 적용할 자동 증가 번호 변수
+	private ArrayList<BizCard> bizCards; // 명함 목록을 저장할 변수
+	
+	public BizCardApp() {
+		bizCards = new ArrayList<BizCard>();
+	}
+	
+	/////////////////////////////////
+	
+	
+ public void doManage() { 
+		
+		outer : while (true) {
+			String selection = selectTask();
+			switch(selection) {
+			case "1": // 등록
+				BizCard bizCard = inputNewBizCard(); // 입력 + BizCard 인스턴스 만들기 + 입력 데이터 저장
+				bizCard.setNo(nextBizCardNo);
+				bizCards.add(bizCard);
+				nextBizCardNo++;
+				break;
+			case "2": // 목록 보기
+				if (nextBizCardNo == 0) {
+					System.out.println("등록된 명함이 없습니다.");
+				} else {
+					showAllBizCards();
+				}
+				break;
+			case "3": // 검색 
+				System.out.println("검색어를 입력하세요 : ");
+				String searchWord = scanner.nextLine();
+				
+				ArrayLict<BizCard> searchedBizCardes = new ArryList<>();
+				for (int i = 0; i < bizCards.size(); i++) {
+					String 
+				}
+				
+				break;
+			case "4": // 수정
+				break;
+			case "5": // 삭제
+				break;
+			case "6": // 저장
+				break;
+			case "9": // 종료
+				System.out.println("명함 관리 프로그렘을 종료합니다.");
+				break outer;
+			default : 
+				System.out.println("지원하지 않는 작업입니다.");
+				break;
+			}
+		}
+		
+	}
+	
+	
+	public String selectTask() {
+		System.out.println("**********************************");
+		System.out.println("  1. 명함 등록");
+		System.out.println("  2. 명함 목록 보기");
+		System.out.println("  3. 명함 검색");
+		System.out.println("  4. 명함 수정");
+		System.out.println("  5. 명함 삭제");
+		System.out.println("  6. 명함 저장");
+		System.out.println("  9. 종료");
+		System.out.println("**************************************");
+		System.out.print("작업을 선택하세요 : ");
+		String selection = scanner.nextLine();
+		
+		return selection;
+	}
+	/**
+	 * 명함 정보 입력 받는 메서드
+	 * @return 입력 받은 정보가 저장된 BizCard 인스턴스
+	 * 
+	 */
+	private BizCard inputNewBizCard() {
+		// 1. BizCard 인스턴스 만들기
+		BizCard bizCard = new BizCard();
+		// 2. 사용자 입력 
+		System.out.print("이름 : ");
+		String name = scanner.nextLine();
+		System.out.print("전화번호 : ");
+		String phone = scanner.nextLine();
+		// 3. 입력 데이터를 BizCard 인스턴스에 저장
+		bizCard.setName(name);
+		bizCard.setPhone(phone);
+		
+		return bizCard;
+	}
+
+/////////////////////////////////////////////////
+
+	public static void main(String[] args) {
+		
+		BizCardApp app = new BizCardApp();
+		app.doManage();
+		
+		// 1. 작업 메뉴 표시 + 선택 함수 만들기
+		
+		// 2. 선택 작업에 따라 실행하는 구조 만들기, 관련 변수 만들기
+		// 3. 등록 기능 표현
+		
+	}
+}
