@@ -1,0 +1,12 @@
+INDEX VERSION 1.134+C:\Users\Infotrol-User\Documents\YS\workspace\java-basic2\.metadata\.plugins\org.eclipse.jdt.core
+2389883927.index
+1865797976.index
+761857815.index
+348993221.index
+1592990745.index
+3617221134.index
+254220282.index
+1730603349.index
+1871105517.index
+149437250.index
+38543032.index

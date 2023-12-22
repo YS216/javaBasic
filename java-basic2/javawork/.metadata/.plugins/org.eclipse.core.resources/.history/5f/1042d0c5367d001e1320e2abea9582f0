@@ -1,0 +1,66 @@
+package ext;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class GradeTest {
+
+	Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		int select;
+        boolean check = false;
+        ArrayList<Grade> glist = new ArrayList<>();
+        int gListIndex = -1;
+	
+		do {
+			System.out.println("=============================================");
+			System.out.println("1. 학생 정보 및 점수 입력");
+			System.out.println("2. login(출력은 login이 되어야만 출력 가능)");
+			System.out.println("3. 학생 정보 출력");
+			System.out.println("4. 합계외 평균 출력");
+			System.out.println("5. logout");
+			System.out.println("6. 프로그렘 종료");
+			System.out.println("---------------------------------------------");
+			System.out.println("번호를 선택하세요 :");
+			select = sc.nextInt();
+			
+			switch(select) {
+				case 1:
+					// 학생 정보 입력
+					
+					break;
+				
+				case 2:
+					break;
+					
+				case 3:
+					break;
+					
+				case 4:
+					break;
+					
+				case 5:
+					break;
+					
+				case 6:
+					System.out.println("프로그렘을 종료합니다.");
+					break;
+				default:
+					System.out.println("잘못 입력하였습니다. 다시 입력해주세요");
+			
+			}
+		
+		} while(select !=6);
+		
+	}
+	
+	public void addStudent() {
+		System.out.println("id 입력 : ");
+		String id = sc.next();
+		System.out.println("이름 입력 : ");
+		String name = sc.next();
+	}
+
+}

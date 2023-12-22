@@ -1,0 +1,130 @@
+package ext;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class GradeTest {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int select;
+        boolean check = false;
+        ArrayList<Grade> glist = new ArrayList<>();
+        int gListIndex = -1;
+	
+		do {
+			System.out.println("=============================================");
+			System.out.println("1. 학생 정보 및 점수 입력");
+			System.out.println("2. login(출력은 login이 되어야만 출력 가능)");
+			System.out.println("3. 학생 정보 출력");
+			System.out.println("4. 합계외 평균 출력");
+			System.out.println("5. logout");
+			System.out.println("6. 프로그렘 종료");
+			System.out.println("---------------------------------------------");
+			System.out.println("번호를 선택하세요 :");
+			select = sc.nextInt();
+			
+			switch(select) {
+				case 1:
+					// 학생 정보 입력
+					System.out.println("id 입력 : ");
+					String id = sc.next();
+					System.out.println("이름 입력 : ");
+					String name = sc.next();
+					System.out.println("비밀번호 입력 : ");
+					String password = sc.next();
+					System.out.println("나이 입력 : ");
+					int age = sc.nextInt();
+					System.out.println("=====점수 입력=====");
+					System.out.println("국어 : ");
+					int kor = sc.nextInt();
+					System.out.println("영어 : ");
+					int eng = sc.nextInt();
+					System.out.println("컴퓨터 : ");
+					int com = sc.nextInt();
+					System.out.println("수학 : ");
+					int math = sc.nextInt();
+					
+					Grade student = new Grade(id, name, password, age, kor, eng, com, math);
+					glist.add(student);
+					
+					break;
+				
+				case 2:
+					// 로그인
+					int maxLoginAttempts = 3;
+			        int loginAttempts = 0;
+			        
+			        while (loginAttempts < maxLoginAttempts) {
+			            System.out.println("ID를 입력하세요:");
+			            String loginId = sc.next();
+			            System.out.println("PASSWORD를 입력하세요:");
+			            String loginPw = sc.next();
+			            
+			            String id2 = glist.get(gListIndex).getId();
+			            Stirng password2 = glist.get(gListIndex).getPassword();
+
+			            if (loginId.equals(id2) && loginPw.equals(password2)) {
+			                System.out.println("로그인 성공");
+			                break;
+			            } else {
+			                System.out.println("ID또는 PASSWORD가 틀렸습니다. 다시 입력하세요.");
+			                loginAttempts++;
+			            }
+			        }
+
+			        if (loginAttempts == maxLoginAttempts) {
+			            System.out.println("3번의 로그인에 실패하였습니다. 본인확인이 필요합니다.");
+			        }
+
+					break;
+					
+				case 3:
+					
+					if (check) {
+						String name2 = glist.get(gListIndex).getName();
+						String id3 = glist.get(gListIndex).getId();
+						int age2 = glist.get(gListIndex).getAge();
+						
+				        System.out.println(name2 +"의 정보 : " + name2 +
+				        		"의 정보 [id=" + id3 +", age="+ age2 + "]" );
+				        
+				    } else {
+				        System.out.println("로그인 후에만 출력 가능합니다.");
+				    }
+					break;
+					
+				case 4:
+					if (check) {
+						int totalScore = glist.get(gListIndex).getTotalScore();
+                        double avg = glist.get(gListIndex).getAvg();
+                        System.out.println("합계: " + totalScore);
+                        System.out.println("평균: " + avg);
+                    } else {
+                        System.out.println("먼저 로그인하세요.");
+                    }
+					break;
+					
+				case 5:
+					
+					System.out.println("로그아웃 되었습니다.");
+                    sc.close();
+                    System.exit(0);
+                    
+					break;
+					
+				case 6:
+					System.out.println("프로그렘을 종료합니다.");
+					break;
+				default:
+					System.out.println("잘못 입력하였습니다. 다시 입력해주세요");
+			
+			}
+		
+		} while(select !=6);
+		
+	}
+	
+
+}

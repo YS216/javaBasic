@@ -1,0 +1,15 @@
+package ex2;
+
+public class NumRangeException {
+	
+	String message;
+	
+	NumRangeException() {
+		
+	}
+	
+	NumRangeException(String Message){
+		
+	}
+
+}

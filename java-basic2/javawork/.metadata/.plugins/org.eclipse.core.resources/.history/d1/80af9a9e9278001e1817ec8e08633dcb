@@ -1,0 +1,19 @@
+package ex2;
+
+public class NumberController {
+
+//	public static void main(String[] args) {
+//		
+//
+//	}
+
+	private static void NumberController() {
+		
+		
+	}
+	
+	void check(int num1, int num2) {
+		
+	}
+
+}

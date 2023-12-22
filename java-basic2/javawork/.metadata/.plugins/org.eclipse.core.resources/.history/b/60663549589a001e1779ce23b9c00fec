@@ -1,0 +1,15 @@
+package ext;
+
+public class 홀수배열 {
+	public int[] solution(int n) {
+        int[] answer = {};
+        
+        for(int i = 0; i < answer.length; i++) {
+            if(arr[i] % 2 != 0){
+                
+            }
+        }
+        return answer;
+    }
+
+}
